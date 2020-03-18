@@ -6,6 +6,6 @@ ETEFS_Mini is a transparent file encryption SDK based on file system minifilter 
 ## Connect
 For more information, please visit 
 http://www.etefs.com  or  
-http://www.minifilter.net
-For business coroperation or more product detail ,please contact
+http://www.minifilter.net  
+For business coroperation or more product detail ,please contact  
 etefs@etefs.com
