@@ -61,64 +61,33 @@ typedef struct _FILE_EVENT_PACKET
 		{ 
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
+			WCHAR            NotUsed0[MAX_PATH];
 			FILE_PRIVILEGE   Privilege;
 		}QueryPrivilege;
 
-		struct  
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}UpdatePrivilege;
 
 		struct  
 		{
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileOpenFromShell;
-
-		struct  
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileOpenFromROT;
-
-		struct  
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileCloseFromROT;
-
-		struct  
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			WCHAR            NotUsed0[MAX_PATH];
+			FILE_PRIVILEGE   NotUsed1;
 		}FileCloseFromWnd;
 
 		struct  
 		{ 
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			WCHAR            NotUsed0[MAX_PATH];
+			FILE_PRIVILEGE   NotUsed1;
 		}FilePrint;
 
 		struct  
 		{ 
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			WCHAR            NotUsed0[MAX_PATH];
+			FILE_PRIVILEGE   NotUsed1;
 		}FileOpenFromApi;
 
 		struct  
@@ -126,15 +95,15 @@ typedef struct _FILE_EVENT_PACKET
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
 			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			FILE_PRIVILEGE   NotUsed0;
 		}FileSaveAs;
 
 		struct 
 		{
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			WCHAR            NotUsed0[MAX_PATH];
+			FILE_PRIVILEGE   NotUsed1;
 			EXE_SIG_INFO     SigInfo;
 		}FileQuerySigInfo;
 
@@ -142,60 +111,9 @@ typedef struct _FILE_EVENT_PACKET
 		{
 			DWORD            dwPID;
 			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
+			WCHAR            NotUsed0[MAX_PATH];
+			FILE_PRIVILEGE   NotUsed1;
 		}FileFakedDected;
-
-
-		struct
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileCopy;
-
-		struct
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileMove;
-
-		struct
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileRename;
-
-		struct
-		{
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileDelete;
-
-		struct  
-		{ 
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-		}FileModified;
-
-		struct  
-		{ 
-			DWORD            dwPID;
-			WCHAR            wszSrcFileName[MAX_PATH];
-			WCHAR            wszDestFileName[MAX_PATH];
-			FILE_PRIVILEGE   Privilege;
-			EXE_SIG_INFO     SigInfo;
-			CHAR             CustomData[1024];
-		}FileQueryCustomData;
 	};
 
 }FILE_EVENT_PACKET,*PFILE_EVENT_PACKET;
