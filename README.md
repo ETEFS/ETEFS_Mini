@@ -8,5 +8,5 @@ Besides of the core transparent file encryption functionality, ETEFS_Mini also p
 For more information, please visit  
 http://www.etefs.com  or  
 http://www.minifilter.net  
-For business coroperation or more product detail ,please contact  
+For business cooperation or more product detail ,please contact  
 etefs@etefs.com
