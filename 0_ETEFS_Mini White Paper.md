@@ -13,3 +13,6 @@ ETEFS_Mini is a transparent file encryption SDK based on minifilter technology. 
 ## 2 Product Benefits
 ### Easy to use
 The API set of ETEFS_Mini is comprised of several functions programming in “C” language exported by a DLL library. By using these functions, it’s very easy to build a basic transparent file encryption system. These API functions can also be called from other programming language, like “C#” and “VB”.
+### Easy to extend
+To add file encryption support for a new application is also very easy. ETEFS_Mini provides two functions to support adding and deleting the file encryption policy. ETEFS_Mini can support most common applications by sending correct policy.
+
