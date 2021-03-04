@@ -19,3 +19,6 @@ To add file encryption support for a new application is also very easy. ETEFS_Mi
 ETEFS_Mini includes a file access control module and an operation event monitor module. The file access control module is used to restrict the operation on the currently opened file issued by the user according to the access control policy. The operation event monitor is used to capture the user’s action on the encrypted file, such as “file opened” and “file closed” event, etc. 
 ### Cut down the development cycle
 Developing a driver is difficult. Developing a file system driver is even more difficult. If you want to create an engine from scratch, this may take a long development cycle and cause the loss of marketing.
+## 3 System Architecture
+The following diagram shows the architecture of ETEFS_Mini:
+![图片](https://user-images.githubusercontent.com/39994647/109901419-0264bf00-7cd4-11eb-95d0-130e655676c6.png)
