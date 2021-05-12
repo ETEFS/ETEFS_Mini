@@ -29,3 +29,5 @@ The applications diagram represents the selected executable to be encrypted, suc
 ### Control program
 The control program diagram represents the process sending the policy to the transparent file encryption system core and receiving the file operation event log. If this program exits, all policy set by it will not take effect.
 
+### Policy configuration
+The policy configuration diagram represents the module that receives the policy from control program. It stores the policy data to a file mapping object. Other modules can get the corresponding policy by reading the file mapping object.
