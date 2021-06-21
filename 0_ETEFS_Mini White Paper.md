@@ -31,3 +31,7 @@ The control program diagram represents the process sending the policy to the tra
 
 ### Policy configuration
 The policy configuration diagram represents the module that receives the policy from control program. It stores the policy data to a file mapping object. Other modules can get the corresponding policy by reading the file mapping object.
+
+### Event report
+The event report module receives the operation log data from the capture module and pushes these log data to the control program. It uses the named pipe as the data transport mechanism.
+
