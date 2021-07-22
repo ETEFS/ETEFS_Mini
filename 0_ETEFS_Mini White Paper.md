@@ -35,3 +35,5 @@ The policy configuration diagram represents the module that receives the policy 
 ### Event report
 The event report module receives the operation log data from the capture module and pushes these log data to the control program. It uses the named pipe as the data transport mechanism.
 
+## File event capture and access control
+The functionality of this module has been described in chapter 2.
