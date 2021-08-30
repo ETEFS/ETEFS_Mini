@@ -37,3 +37,7 @@ The event report module receives the operation log data from the capture module 
 
 ## File event capture and access control
 The functionality of this module has been described in chapter 2.
+
+## Transparent file encryption core
+This is the key component of ETEFS_Mini. It implements transparent file encryption by a file system minifilter driver. It decrypts data while an application loads data from disk and encrypts data while an application writes data to disk.
+
