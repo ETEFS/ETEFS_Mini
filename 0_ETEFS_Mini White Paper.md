@@ -35,9 +35,10 @@ The policy configuration diagram represents the module that receives the policy 
 ### Event report
 The event report module receives the operation log data from the capture module and pushes these log data to the control program. It uses the named pipe as the data transport mechanism.
 
-## File event capture and access control
+### File event capture and access control
 The functionality of this module has been described in chapter 2.
 
-## Transparent file encryption core
+### Transparent file encryption core
 This is the key component of ETEFS_Mini. It implements transparent file encryption by a file system minifilter driver. It decrypts data while an application loads data from disk and encrypts data while an application writes data to disk.
+ 
 
