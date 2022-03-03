@@ -45,3 +45,6 @@ This is the key component of ETEFS_Mini. It implements transparent file encrypti
 ### Implementing in kernel mode
 The core module of ETEFS_Mini is implemented in kernel mode. The minfilter framework is highly recommended by Microsoft. It is very convenient to intercept the file I/O requests and insert encryption module on file system stack. 
 
+### Random file encryption key
+ETEFS_Mini supports the random file encryption key mechanism. After enable this feature, ETEFS_Mini will allocate a random file encryption key for each file. Using this method to encrypt file is much more safety than using fixed file encryption key.
+
