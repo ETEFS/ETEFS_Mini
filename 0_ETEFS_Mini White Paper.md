@@ -48,3 +48,5 @@ The core module of ETEFS_Mini is implemented in kernel mode. The minfilter frame
 ### Random file encryption key
 ETEFS_Mini supports the random file encryption key mechanism. After enable this feature, ETEFS_Mini will allocate a random file encryption key for each file. Using this method to encrypt file is much more safety than using fixed file encryption key.
 
+### Custom data binding
+ETEFS_Mini adds an extended file header data to each encrypted file. A part of this header data is reservedly used by ETEFS_Mini itself to save some basic information about encryption. Another part of this header data is free for developer. Once this area of header data is set by the developer, it is firmly bind to the encrypted file forever by ETEFS_Mini. While editing the file, this custom data is still bonded with the encrypted file. The kind of data can be used to save the extended control information for the encrypted file.
