@@ -50,3 +50,7 @@ ETEFS_Mini supports the random file encryption key mechanism. After enable this 
 
 ### Custom data binding
 ETEFS_Mini adds an extended file header data to each encrypted file. A part of this header data is reservedly used by ETEFS_Mini itself to save some basic information about encryption. Another part of this header data is free for developer. Once this area of header data is set by the developer, it is firmly bind to the encrypted file forever by ETEFS_Mini. While editing the file, this custom data is still bonded with the encrypted file. The kind of data can be used to save the extended control information for the encrypted file.
+
+### Manually encryption
+By default, once an unencrypted file is opened by a user, it will be encrypted by ETEFS_Mini automatically. If the developer enables “manually encryption” policy, ETEFS_Mini will not encrypt the file automatically. Users must use the encryption tools, for example a shell menu item, provided by the developer to convert the file into encrypted state.
+
