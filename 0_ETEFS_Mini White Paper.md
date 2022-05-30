@@ -57,3 +57,5 @@ By default, once an unencrypted file is opened by a user, it will be encrypted b
 ### Save-as encryption
 When a user saves a currently opened file to a new file, the newly created file will be encrypted by ETEFS_Mini if the currently opened file is encrypted. This mechanism is used to keep the file containing sensitive data is always in encrypted state.
 
+### File event capture
+ETEFS_Mini supports capturing common file operation event, such as “open”, “close “and “print” etc.
