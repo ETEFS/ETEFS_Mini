@@ -54,8 +54,8 @@ ETEFS_Mini adds an extended file header data to each encrypted file. A part of t
 ### Manually encryption
 By default, once an unencrypted file is opened by a user, it will be encrypted by ETEFS_Mini automatically. If the developer enables “manually encryption” policy, ETEFS_Mini will not encrypt the file automatically. Users must use the encryption tools, for example a shell menu item, provided by the developer to convert the file into encrypted state.
 
-### Save-as encryption
+### Encryption on Save-as 
 When a user saves a currently opened file to a new file, the newly created file will be encrypted by ETEFS_Mini if the currently opened file is encrypted. This mechanism is used to keep the file containing sensitive data is always in encrypted state.
 
-### File event capture
+### File operation event capture
 ETEFS_Mini supports capturing common file operation event, such as “open”, “close “and “print” etc.
