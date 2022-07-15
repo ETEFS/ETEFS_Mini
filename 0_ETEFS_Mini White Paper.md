@@ -59,3 +59,6 @@ When a user saves a currently opened file to a new file, the newly created file 
 
 ### File operation event capture
 ETEFS_Mini supports capturing common file operation event, such as “open”, “close “and “print” etc.
+
+### Transparent file encryption core
+This is the key component of ETEFS_Mini. It implements transparent file encryption by a file system minifilter driver. It decrypts data while an application loads data from disk and encrypts data while an application writes data to disk.
