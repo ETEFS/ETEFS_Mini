@@ -42,6 +42,10 @@ The functionality of this module has been described in chapter 2.
 This is the key component of ETEFS_Mini. It implements transparent file encryption by a file system minifilter driver. It decrypts data while an application loads data from disk and encrypts data while an application writes data to disk.
 
 ## 4 Product Features 
+
+### Adding an extended file header per each encrypted file
+ETEFS_Mini supports adding a file header data segment at the front of the encrypted file. One part of this data area is reserved by ETEFS_Mini, another part can be used by user of ETEFS_Mini freely. 
+
 ### Implementing in kernel mode
 The core module of ETEFS_Mini is implemented in kernel mode. The minfilter framework is highly recommended by Microsoft. It is very convenient to intercept the file I/O requests and insert encryption module on file system stack. 
 
@@ -63,4 +67,4 @@ ETEFS_Mini supports capturing common file operation event, such as “open”, �
 ### Transparent file encryption core
 This is the key component of ETEFS_Mini. It implements transparent file encryption by a file system minifilter driver. It decrypts data while an application loads data from disk and encrypts data while an application writes data to disk.
 
-## 4 Product Features 
+
