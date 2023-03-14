@@ -43,7 +43,7 @@ This is the key component of ETEFS_Mini. It implements transparent file encrypti
 
 ## 4 Product Features 
 
-### Adding an extended file header per each encrypted file
+### Adding an extra file header per each encrypted file
 ETEFS_Mini supports adding a file header data segment at the front of the encrypted file. One part of this data area is reserved by ETEFS_Mini, another part can be used by user of ETEFS_Mini freely. 
 
 ### Implementing in kernel mode
