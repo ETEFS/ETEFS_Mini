@@ -13,7 +13,7 @@ ETEFS_Mini is a transparent file encryption SDK based on minifilter technology. 
 ## 2 Product Benefits
 ### Suport for encryption with per process access restriction
 To create a minifilter encryption driver is not easy, to create a driver suport encryption with process access restriction
-is more complicated. ETEFS_Mini deos suport this feature. ETEFS_Mini does not use file redirection or hidden files to suport
+is more complicated. ETEFS_Mini does suport this feature. ETEFS_Mini does not use file redirection or hidden files to suport
 this feature. All I/O requests operate on the same raw on-disk file. There are two cache views for the encrypted files, 
 plain data cache for trusted process, encrypted data cache for untrusted process.
 ### Easy to use
