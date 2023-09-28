@@ -44,8 +44,8 @@ This is the key component of ETEFS_Mini. It implements transparent file encrypti
 
 ## 4 Product Features 
 ### Suport for encryption with per process access restriction
-To create a minifilter encryption driver is not easy, to create a driver suport encryption with process access restriction
-is more complicated. ETEFS_Mini does suport this feature. ETEFS_Mini does not use file redirection or hidden files to suport
+To create a minifilter encryption driver is not easy, to create a driver support encryption with process access restriction
+is more complicated. ETEFS_Mini does support this feature. ETEFS_Mini does not use file redirection or hidden files to suport
 this feature. All I/O requests operate on the same raw on-disk file. There are two cache views for the encrypted files, 
 plain data cache for trusted process, encrypted data cache for untrusted process.
 
