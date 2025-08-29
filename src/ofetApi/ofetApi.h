@@ -48,8 +48,8 @@ typedef struct _FILE_CRYPT_CONFIG
 
 DWORD   GetFileCryptConfig(WCHAR* wszFileName, PFILE_CRYPT_CONFIG cryptConfig);
 
-#define  HEADER_BUFFER_SIZE   2048
-#define  CUSTOM_DATA_SIZE     1024
+#define  HEADER_BUFFER_SIZE   4096
+#define  CUSTOM_DATA_SIZE     3072
 
 DWORD   SetCustomData(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSize );
 DWORD   GetCustomData(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSize );
