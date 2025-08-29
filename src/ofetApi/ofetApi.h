@@ -135,11 +135,8 @@ DWORD   UnloadPhotoShopPolicy( );
 DWORD   LoadMspaintPolicy( );
 DWORD   UnloadMspaintPolicy( );
 
-DWORD   LoadImgViewerPolicy( );
-DWORD   UnloadImgViewerPolicy( );
-
-
 #ifdef __cplusplus
 }
 #endif
 #endif
+
