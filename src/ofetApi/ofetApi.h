@@ -66,6 +66,9 @@ DWORD   GetCustomDataAlone(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG Buf
 DWORD   SetCustomDataResident(DWORD dwValue );
 DWORD   GetCustomDataResident(DWORD* dwValue );
 
+#define SetHalfTransparentMode  SetManualEncryptFile
+#define GetManualEncryptFile   GetManualEncryptFile
+
 DWORD   SetManualEncryptFile(DWORD dwValue );
 DWORD   GetManualEncryptFile(DWORD* dwValue );
 
