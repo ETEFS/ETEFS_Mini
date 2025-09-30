@@ -55,24 +55,27 @@ DWORD   SetCustomData(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSi
 DWORD   GetCustomData(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSize );
 
 DWORD   SetCustomDataAlone(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSize, 
-						   int CipherID,  void* FileKey, int KeyLength, int *nErrCode
+						   int CipherID,  void* FileKey, int KeyLength
 						   );
 
 DWORD   GetCustomDataAlone(WCHAR* wszFileName, PVOID CustomDataBuffer, ULONG BufferSize, 
-						   int CipherID,  void* FileKey, int KeyLength,
-						   int *nErrCode
+						   int CipherID,  void* FileKey, int KeyLength
 						   );
 
 DWORD   SetCustomDataResident(DWORD dwValue );
 DWORD   GetCustomDataResident(DWORD* dwValue );
 
 #define SetHalfTransparentMode  SetManualEncryptFile
-#define GetManualEncryptFile   GetManualEncryptFile
+#define GetHalfTransparentMode  GetManualEncryptFile
 
 DWORD   SetManualEncryptFile(DWORD dwValue );
 DWORD   GetManualEncryptFile(DWORD* dwValue );
 
+#define   PROC_FLAG_ENCRYPT_UNKNOWN   0x00000001
+
 #define   PROC_FLAG_ENCRYPT_ON_OPEN   0x00000002
+
+#define   PROC_FLAG_ENCRYPT_ON_READ   0x00000002
 
 DWORD   SendPolicy( WCHAR* wszExeName, WCHAR* wszExtNameList, ULONG nFlags );
 DWORD   SendPolicA( CHAR* szExeName, CHAR* szExtNameList, ULONG nFlags );
@@ -138,8 +141,11 @@ DWORD   UnloadPhotoShopPolicy( );
 DWORD   LoadMspaintPolicy( );
 DWORD   UnloadMspaintPolicy( );
 
+DWORD   LoadImgViewerPolicy( );
+DWORD   UnloadImgViewerPolicy( );
+
+
 #ifdef __cplusplus
 }
 #endif
 #endif
-
