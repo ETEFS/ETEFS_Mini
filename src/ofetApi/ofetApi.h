@@ -81,6 +81,11 @@ DWORD   GetManualEncryptFile(DWORD* dwValue );
 
 #define   PROC_FLAG_NAME_IS_A_MD5     0x00000004
 
+BOOL    ProcName_AddIgnorePath(WCHAR* wszExeName, WCHAR* wszPath);
+BOOL    ProcName_RemoveIgnorePath(WCHAR* wszExeName, WCHAR* wszPath);
+BOOL    ProcName_GetIgnorePathCount(WCHAR* wszExeName, int* nCount);
+BOOL    ProcName_GetIgnorePath(WCHAR* wszExeName, int index, WCHAR* wszIngorePath, int nBuffSize);
+
 DWORD   SendPolicy( WCHAR* wszExeName, WCHAR* wszExtNameList, ULONG nFlags );
 DWORD   SendPolicA( CHAR* szExeName, CHAR* szExtNameList, ULONG nFlags );
 
