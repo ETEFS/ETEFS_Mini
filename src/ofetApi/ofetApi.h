@@ -72,10 +72,14 @@ DWORD   SetManualEncryptFile(DWORD dwValue );
 DWORD   GetManualEncryptFile(DWORD* dwValue );
 
 #define   PROC_FLAG_ENCRYPT_UNKNOWN   0x00000001
+#define   PROC_FLAG_AUTO_ENCRYPT_NEW_CREATED_FILE  PROC_FLAG_ENCRYPT_UNKNOWN
 
 #define   PROC_FLAG_ENCRYPT_ON_OPEN   0x00000002
+#define   PROC_FLAG_ENCRYPT_ON_ACCESS  PROC_FLAG_ENCRYPT_ON_OPEN
 
 #define   PROC_FLAG_ENCRYPT_ON_READ   0x00000002
+
+#define   PROC_FLAG_NAME_IS_A_MD5     0x00000004
 
 DWORD   SendPolicy( WCHAR* wszExeName, WCHAR* wszExtNameList, ULONG nFlags );
 DWORD   SendPolicA( CHAR* szExeName, CHAR* szExtNameList, ULONG nFlags );
